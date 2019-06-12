@@ -1,13 +1,13 @@
-package interfaces
+package implements
 
 import (
 	"errors"
 	"strings"
 )
 
-type bookService struct {}
+type BookService struct {}
 
-func (bookService) Index(s string) (string, error) {
+func (BookService) Index(s string) (string, error) {
 	if s == "" {
 		return "", ErrEmpty
 	}

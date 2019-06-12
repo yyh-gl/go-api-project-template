@@ -1,4 +1,4 @@
-package implements
+package interfaces
 
 type BookService interface {
 	Index(string) (string, error)
