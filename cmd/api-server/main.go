@@ -7,9 +7,9 @@ import (
 	"net/http"
 
 	httptransport "github.com/go-kit/kit/transport/http"
-	"github.com/yyh-gl/go-project-template/api/json/requests/books"
-	"github.com/yyh-gl/go-project-template/internal/api-server/endpoints"
-	"github.com/yyh-gl/go-project-template/internal/api-server/services/implements"
+	"go-api-project-template/api/json/requests/books"
+	"go-api-project-template/internal/api-server/endpoints"
+	"go-api-project-template/internal/api-server/services/implements"
 )
 
 func main() {
