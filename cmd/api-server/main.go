@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -22,7 +23,11 @@ func main() {
 	)
 
 	http.Handle("/index", indexHandler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+
+	fmt.Println("========================")
+	fmt.Println("Server Start >> http://localhost:3000")
+	fmt.Println("========================")
+	log.Fatal(http.ListenAndServe(":3000", nil))
 }
 
 func decodeUppercaseRequest(_ context.Context, r *http.Request) (interface{}, error) {
