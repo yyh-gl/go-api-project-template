@@ -3,9 +3,9 @@ package endpoints
 import (
 	"context"
 	"github.com/go-kit/kit/endpoint"
-	"go-api-project-template/api/json/requests/books"
-	"go-api-project-template/api/json/responses/books"
-	"go-api-project-template/internal/api-server/services/interfaces"
+	"github.com/yyh-gl/go-api-project-template/api/json/requests/books"
+	"github.com/yyh-gl/go-api-project-template/api/json/responses/books"
+	"github.com/yyh-gl/go-api-project-template/internal/api-server/services/interfaces"
 )
 
 func UppercaseEndpoint(svc interfaces.BookService) endpoint.Endpoint {
